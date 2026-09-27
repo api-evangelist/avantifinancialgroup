@@ -1,23 +1,66 @@
 aid: avantifinancialgroup
+
 name: Avantifinancialgroup
-description: 'Avantifinancialgroup is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Avantifinancialgroup, operating as AVANTI FINANCIAL GROUP, provides a broad range of insurance and risk management solutions including commercial property, construction, homeowners, life, and business owners policies. Based in the United States, the company serves individuals and businesses seeking tailored coverage and risk mitigation services across multiple industries. The firm emphasizes personalized service, comprehensive policy options, and expertise in navigating complex insurance needs for both residential and commercial clients, ensuring reliable protection and peace of mind.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avantifinancialgroup/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Insurance
+- RiskManagement
+- FinancialServices
+- US
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avantifinancialgroup-hosts.yml
+- type: PrivacyPolicy
+  url: https://avantifinancialgroup.com/privacy-policy.html
+- type: DomainSecurity
+  url: security/avantifinancialgroup-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/avantifinancialgroup
+  url: https://avantifinancialgroup.com
+- type: Blog
+  url: https://avantifinancialgroup.com/blog.html
+- type: Documentation
+  url: https://avantifinancialgroup.com/about-us.html
+- type: Support
+  url: https://avantifinancialgroup.com/contact.html
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: "Avantifinancialgroup provides insurance services and does not expose a software API."
+  evidence:
+    - url: https://avantifinancialgroup.com/about-us.html
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
